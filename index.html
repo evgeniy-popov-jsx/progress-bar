@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="script.js" defer></script>
+  <title>Progress bar for ozon</title>
+</head>
+<body>
+  <div class="container">
+    <div class="progress-bar">
+      <svg id="svg" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle id="shadow" cx="50%" cy="50%" r="45%"></circle>
+        <circle id="progressCircle" cx="50%" cy="50%" r="45%"></circle>
+      </svg>
+    </div>
+    <div class="progress-controls">
+      <form>
+        <div class="control">
+          <label class="label" for="progress">
+            <input type="number" id="progress" min="0" max="100" value="60">
+          </label>
+          <span>Value</span>
+        </div>
+        <div class="control">
+          <label class="label switch" for="animate">
+            <input type="checkbox" id="animate">
+            <span class="slider"></span>
+          </label>
+          <span>Animated</span>
+        </div>
+        <div class="control">
+          <label class="label switch" for="hide">
+            <input type="checkbox" id="hide">
+            <span class="slider"></span>
+          </label>
+          <span>Hide</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

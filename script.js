@@ -12,11 +12,9 @@ function setProgress(value) {
 }
 
 inputProgress.addEventListener('input',  () => {
-  const value = inputProgress.value;
+  const value = inputProgress.value.replace(/[^0-9]/g, '');
 
-  if(isNaN(value)) {
-    inputProgress.value = 0;
-  } else if (value < 0) {
+  if (value < 0) {
     inputProgress.value = 0;
   } else if (value > 100) {
     inputProgress.value = 100;

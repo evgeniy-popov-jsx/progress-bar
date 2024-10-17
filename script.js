@@ -12,7 +12,7 @@ function setProgress(value) {
 }
 
 inputProgress.addEventListener('input',  () => {
-  const value = Number(inputProgress.value);
+  const value = inputProgress.value;
 
   if(isNaN(value)) {
     inputProgress.value = 0;

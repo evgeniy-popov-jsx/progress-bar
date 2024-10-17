@@ -13,6 +13,7 @@ function setProgress(value) {
 
 inputProgress.addEventListener('input',  () => {
   const value = inputProgress.value.replace(/[^0-9]/g, '');
+  inputProgress.value = value;
 
   if (value < 0) {
     inputProgress.value = 0;
@@ -20,8 +21,7 @@ inputProgress.addEventListener('input',  () => {
     inputProgress.value = 100;
   }
 
-  inputProgress.value = value;
-  setProgress(value);
+  setProgress(inputProgress.value);
 });
 
 inputAnimated.addEventListener('change', () => {

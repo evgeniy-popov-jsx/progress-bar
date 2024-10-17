@@ -20,7 +20,8 @@ inputProgress.addEventListener('input',  () => {
     inputProgress.value = 100;
   }
 
-  setProgress(inputProgress.value);
+  inputProgress.value = value;
+  setProgress(value);
 });
 
 inputAnimated.addEventListener('change', () => {

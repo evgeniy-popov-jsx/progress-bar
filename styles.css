@@ -75,7 +75,7 @@ body {
   font-weight: bold;
 }
 
-.control-progress {
+input[type="number"] {
   width: 3.7rem;
   height: 1.8rem;
   padding: 10px;
@@ -87,12 +87,12 @@ body {
   background-color: var(--color-shadow);
 }
 
-.control-progress:focus {
+input[type="number"]:focus {
   border: var(--color-accent) 2px solid;
 }
 
-.control-progress::-webkit-outer-spin-button,
-.control-progress::-webkit-inner-spin-button {
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
